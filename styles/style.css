@@ -109,9 +109,6 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
   color: rgb(255 255 255 / 0.7);
 }
 
@@ -193,7 +190,6 @@ ol {
 }
 
 .button:hover {
-  cursor: pointer;
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
   text-underline-offset: 2px;
@@ -231,7 +227,6 @@ ol {
 
 .content__accent {
   color: #545050;
-  line-height: 94%;
 }
 
 .content__list-container {
@@ -239,7 +234,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__card-link {
@@ -289,8 +284,9 @@ ol {
 .content__video-card-description {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 3;
   overflow: hidden;
+  text-overflow: ellipsis;
   width: 195px;
   font-weight: 400;
   line-height: 16.2px;
